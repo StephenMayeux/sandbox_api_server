@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // DB Setup
-mongoose.connect('mongodb://localhost:3000/sandboxapi');
+mongoose.connect('mongodb://localhost/sandboxapi');
 
 // App Setup
 app.use(logger('combined'));
