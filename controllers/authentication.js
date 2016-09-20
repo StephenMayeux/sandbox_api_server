@@ -14,6 +14,7 @@ exports.signin = function(req, res, next) {
 }
 
 exports.signup = function(req, res, next) {
+  const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;
 
@@ -34,7 +35,7 @@ exports.signup = function(req, res, next) {
     const user = new User({
       email: email,
       password: password,
-      name: '',
+      name: name,
       city: '',
       homepage: '',
       avatar: ''
