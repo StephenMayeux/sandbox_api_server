@@ -1,7 +1,7 @@
 const User = require('../models/user');
 
 exports.findAll = function(req, res, next) {
-  User.find({}, function(err, profiles) {
+  User.find({}).sort({ createdAt: -1 }).exec(function(err, profiles) {
     if (err) { return next(err); }
     res.send(profiles);
   });

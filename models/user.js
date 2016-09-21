@@ -10,7 +10,7 @@ const userSchema = new Schema({
   city: String,
   homepage: String,
   avatar: String
-});
+}, { timestamps: true });
 
 // On Save Hook, encrypt password
 // Before saving a model, run this function
