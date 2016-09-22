@@ -13,4 +13,5 @@ module.exports = function(app) {
   app.post('/signup', Authentication.signup);
   app.get('/profiles', Profiles.findAll);
   app.get('/profiles/:id', Profiles.findOne);
+  app.put('/profiles/:id', Profiles.editUser);
 }
