@@ -26,6 +26,6 @@ exports.editUser = function(req, res, next) {
   User.findByIdAndUpdate(id, {name: name, email: email, city: city, homepage: homepage, avatar: avatar},
   function(err, profile) {
     if (err) { return next(err); }
-    res.send('updated!');
+    res.send(profile);
   });
 }
