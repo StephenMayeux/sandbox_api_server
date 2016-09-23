@@ -24,6 +24,7 @@ exports.editUser = function(req, res, next) {
   const avatar = req.body.avatar;
 
   User.findByIdAndUpdate(id, {name: name, email: email, city: city, homepage: homepage, avatar: avatar},
+  { new: true },
   function(err, profile) {
     if (err) { return next(err); }
     res.send(profile);
