@@ -30,3 +30,7 @@ exports.editUser = function(req, res, next) {
     res.send(profile);
   });
 }
+
+exports.editAvatar = function(req, res, next) {
+  res.send('file uploaded successfully!');
+}
