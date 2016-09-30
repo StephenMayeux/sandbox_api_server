@@ -1,6 +1,3 @@
-// Load environment variables
-require('dotenv').load();
-
 // Application Starting Point
 const express = require('express');
 const http = require('http');
