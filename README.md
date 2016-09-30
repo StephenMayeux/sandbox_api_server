@@ -1,8 +1,14 @@
 # Sandbox Commerce Interview Project
 
+Go to the [live demo](https://sandboxauthclient.herokuapp.com/).
+
 ## API Server
 
 This API server uses Node.js, Express, and Mongoose to handle GET, POST, and PUT requests from a React/Redux application.
+
+## Client Server
+
+The client server was built using React and Redux. You can check out that repository here: https://github.com/StephenMayeux/sandbox_client_server
 
 ## Getting Started
 
