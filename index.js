@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // DB Setup
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/sandboxapi');
+mongoose.connect('mongodb://heroku_w430j2zg:re9v4gv3c4tpdi0crbb63vtudq@ds033337.mongolab.com:33337/heroku_w430j2zg' || 'mongodb://localhost/sandboxapi');
 
 // App Setup
 app.use(logger('combined'));
